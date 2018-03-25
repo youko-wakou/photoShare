@@ -69,7 +69,7 @@ public class UserActivity extends AppCompatActivity {
         }
 //        ===================データベースに保存================================================================
         Database = FirebaseDatabase.getInstance().getReference();
-        PROFILEref = Database.child(Const.profileKey).child(String.valueOf(current_user.getUid()));
+
 //        ==================================================================================================
 //============================プログレスダイアログ============================================================
         progressKousin = new ProgressDialog(this);
@@ -130,7 +130,7 @@ public class UserActivity extends AppCompatActivity {
                 Log.d("name",nameString);
                 Log.d("image",bitmapString);
 //                ==================================================================
-                PROFILEref.setValue(data,this);
+//                PROFILEref.setValue(data,this);
                 progressKousin.show();
 //                ==================================================================================================
             }
